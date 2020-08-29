@@ -5,6 +5,7 @@ import './App.css';
 import Home from './Pages/Home/Home.component';
 import Shop from './Pages/Shop/Shop.component'
 import Header from './Layout/Header.component';
+import Footer from './Layout/footer/Footer'
 import Checkout from './Pages/checkout/checkout.component';
 import SignInUp from './Pages/SignUp-In/SignIn-Up.component';
 import { auth, createUserProfileDocument } from './firebase/firebase.utils';
@@ -55,7 +56,9 @@ class App extends React.Component {
                 <SignInUp />
               )
             }
-          />        </Switch>
+          />        
+          </Switch>
+          <Footer />
       </div>
     );
   }
